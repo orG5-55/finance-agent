@@ -75,7 +75,7 @@ def generate_insights(market_data, news_data):
 3. **תחזיות קדימה וסנטימנט אנליסטים:** מה צופה הקונצנזוס קדימה, סיכונים ומנועי צמיחה פעילים.
 """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+       model="gemini-3.6-flash",
         contents=prompt
     )
     return response.text
